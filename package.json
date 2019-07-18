@@ -1,0 +1,24 @@
+{
+  "name": "JardinDesCodes",
+  "version": "1.0.0",
+  "description": "This is my personal website for recording my coding experiences. I will update the website with all my progress during programming.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangtaoGe518/JardinDesCodes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YangtaoGe518/JardinDesCodes/issues"
+  },
+  "homepage": "https://github.com/YangtaoGe518/JardinDesCodes#readme",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
