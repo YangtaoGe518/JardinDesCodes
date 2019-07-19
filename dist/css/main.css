@@ -13,7 +13,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
-    background: url(../dist/img/test.jpg);
+    background: url(/dist/img/homepage.JPG);
     background-attachment: fixed;
     background-size: cover; }
   body .overlay {

@@ -2,8 +2,8 @@
 $primary-colour: #444;
 $secondary-colour: #eece1a;
 $show-home-image: true;
-$home-image: url(../dist/img/test.jpg);
-$background-opacity: 0.9;
+$home-image: url(/dist/img/homepage.JPG);
+$background-opacity: 0.9;  // adjust the depth
 
 /* functions */
 @mixin easeOut {
@@ -36,7 +36,7 @@ $background-opacity: 0.9;
 
 /* some basic settings */
 body{
-    @include backgroundSetting;
+    @include backgroundSetting();
     background: $primary-colour;
     color: #fff; 
     height: 100%;
