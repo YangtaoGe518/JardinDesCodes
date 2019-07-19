@@ -8,13 +8,9 @@
     "deploy": "gh-pages -d dist",
     "sass": "node-sass -w scss/ -o dist/css/ --recursive"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/YangtaoGe518/JardinDesCodes.git"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Yangtao Ge",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/YangtaoGe518/JardinDesCodes/issues"
   },
