@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/YangtaoGe518/JardinDesCodes/issues"
   },
-  "homepage": "https://github.com/YangtaoGe518/JardinDesCodes",
+  "homepage": "https://yangtaoge518.github.io/JardinDesCodes",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0"
