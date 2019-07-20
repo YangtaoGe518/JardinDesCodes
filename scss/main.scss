@@ -98,8 +98,13 @@ main{
 
 .bio-image {
     grid-area: bioimg; // same as the name in tamplate areas
+    background-image: $profile-image;
+    background-position: center;
+    background-size: 85%;
     margin: auto;
-    border-radius: 30%;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
     border: $secondary-colour 3px solid;
 }
 
