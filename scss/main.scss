@@ -58,7 +58,8 @@ header {
 /* main */
 main{
     padding: 4rem;
-    height: 100%;
+    //height: 100%;
+    min-height: calc(100vh - 60px);
 
     //nested icon class 
     .icons {
@@ -82,4 +83,53 @@ main{
             margin-top: 20vh; // 20 units downwards (divied the page by 100 slices)
         }
     }
+}
+
+
+/* about page */
+.about-info {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas: 
+        'bioimg bio bio'
+        'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr); // three columns 1 fraction each
+}
+
+.bio-image {
+    grid-area: bioimg; // same as the name in tamplate areas
+    margin: auto;
+    border-radius: 30%;
+    border: $secondary-colour 3px solid;
+}
+
+.bio {
+    grid-area: bio;
+}
+
+.job {
+    background: lighten($primary-colour, 5);
+    padding:0.5rem;
+    border-top: $secondary-colour 5px solid;
+}
+
+.job-1 {
+    grid-area: job1;
+}
+
+.job-2 {
+    grid-area: job2;
+}
+
+.job-3 {
+    grid-area: job3;
+}
+
+//footer
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    background: darken($primary-colour, 10);
+    color: setTextColour($primary-colour);
+    height: 60px;
 }
