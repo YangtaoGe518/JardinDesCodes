@@ -136,10 +136,12 @@ main{
 .projects {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
     grid-gap: 20px;
 
     img {
         width: 100%;
+        height: 60%;
         border: 3px #fff solid;
         &:hover {
             opacity: 0.5;
