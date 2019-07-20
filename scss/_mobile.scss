@@ -17,8 +17,21 @@
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
+            font-size: 75%;
+        }
+
+        .about-info {
+            grid-template-areas:
+                'bioimg'
+                'bio'
+                'job1'
+                'job2'
+                'job3';
+    
+            grid-template-columns: 1fr;
         }
     }
+    
 
     ul.menu-nav,
     div.menu-branding {

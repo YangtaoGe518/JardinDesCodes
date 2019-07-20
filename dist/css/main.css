@@ -101,7 +101,11 @@
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 1rem;
+      font-size: 75%; }
+    main .about-info {
+      grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+      grid-template-columns: 1fr; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
