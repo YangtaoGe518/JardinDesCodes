@@ -171,6 +171,32 @@ main{
     color: #333;
 }
 
+/* contact page */
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 1rem;
+
+    div {
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            background: $secondary-colour;
+            color: setTextColour($secondary-colour);
+
+            span{
+                color: setTextColour($secondary-colour);
+            }
+        }
+    }
+}
 
 //footer
 #main-footer {
