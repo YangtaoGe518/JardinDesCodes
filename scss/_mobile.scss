@@ -1,6 +1,8 @@
 // Wide Screen
 @include mediaExLarge {
-
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 // Desktops 
