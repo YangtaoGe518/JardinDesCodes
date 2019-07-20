@@ -11,7 +11,7 @@
 body{
     @include backgroundSetting();
     background: $primary-colour;
-    color: #fff; 
+    color: setTextColour($primary-colour); 
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
