@@ -17,7 +17,7 @@
     }
 
     // menu opened
-    &.close{
+    &.close-menu{
         transform: rotate(180deg);
         
         .btn-line{
@@ -42,7 +42,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.85;
     visibility: hidden;
 
     &.show {
@@ -60,7 +60,7 @@
         width: 50%;
         height: 100vh;
         overflow: hidden;
-}
+    }
 
     // navigation site
     &-nav{
