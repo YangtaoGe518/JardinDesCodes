@@ -129,7 +129,7 @@
     .wechat-screen .qrCode {
       width: 250px;
       height: 250px;
-      background: url(../img/qrcode.jpg);
+      background: url(../img/qrCode.jpg);
       background-position: center;
       background-size: 105%;
       border-radius: 25%;
