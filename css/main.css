@@ -152,7 +152,7 @@
       margin-bottom: 1rem;
       font-size: 75%; }
     main .about-info {
-      grid-template-areas: 'bioimg' 'bio' 'job1' 'job2' 'job3';
+      grid-template-areas: 'bioimg' 'education' 'skills' 'language' 'job1' 'job2' 'job3';
       grid-template-columns: 1fr; }
     main .projects {
       grid-template-columns: repeat(2, 1fr); }
