@@ -27,7 +27,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.85;
+  opacity: 0.87;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -261,8 +261,9 @@ main {
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 'bioimg bio bio' 'job1 job2 job3';
-  grid-template-columns: repeat(3, 1fr); }
+  grid-template-areas: 'bioimg education education' 'bioimg skills skills' 'bioimg language language' 'job1 job2 job3';
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto; }
 
 .bio-image {
   grid-area: bioimg;
@@ -270,18 +271,43 @@ main {
   background-position: center;
   background-size: 85%;
   margin: auto;
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: #eece1a 3px solid; }
 
 .bio {
-  grid-area: bio; }
+  background: #515151;
+  padding: 0.5rem;
+  border-left: #fff 5px solid;
+  transition: all 0.6s ease-out; }
+  .bio:hover {
+    padding: 0.5rem 1.5rem;
+    background: #eece1a;
+    color: #000; }
+    .bio:hover span {
+      color: #000; }
+
+.education {
+  grid-area: education; }
+
+.skills {
+  grid-area: skills; }
+
+.language {
+  grid-area: language; }
 
 .job {
   background: #515151;
   padding: 0.5rem;
-  border-top: #eece1a 5px solid; }
+  border-top: #fff 5px solid;
+  transition: all 0.6s ease-out; }
+  .job:hover {
+    padding: 0.5rem 1.5rem;
+    background: #eece1a;
+    color: #000; }
+    .job:hover span {
+      color: #000; }
 
 .job-1 {
   grid-area: job1; }

@@ -92,9 +92,12 @@ main{
     display: grid;
     grid-gap: 30px;
     grid-template-areas: 
-        'bioimg bio bio'
+        'bioimg education education'
+        'bioimg skills skills'
+        'bioimg language language'
         'job1 job2 job3';
     grid-template-columns: repeat(3, 1fr); // three columns 1 fraction each
+    grid-template-rows: auto;
 }
 
 .bio-image {
@@ -103,20 +106,57 @@ main{
     background-position: center;
     background-size: 85%;
     margin: auto;
-    width: 220px;
-    height: 220px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     border: $secondary-colour 3px solid;
 }
 
-.bio {
-    grid-area: bio;
+.bio{
+    background: lighten($primary-colour, 5);
+    padding:0.5rem;
+    border-left: #fff 5px solid;
+    @include easeOut;
+
+    &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $secondary-colour;
+        color: setTextColour($secondary-colour);
+
+        span{
+            color: setTextColour($secondary-colour);
+        }
+    }
+}
+
+.education {
+    grid-area: education;
+}
+
+.skills {
+    grid-area: skills;
+}
+
+.language {
+    grid-area: language;
 }
 
 .job {
     background: lighten($primary-colour, 5);
     padding:0.5rem;
-    border-top: $secondary-colour 5px solid;
+    border-top: #fff 5px solid;
+
+    @include easeOut;
+
+    &:hover {
+        padding: 0.5rem 1.5rem;
+        background: $secondary-colour;
+        color: setTextColour($secondary-colour);
+
+        span{
+            color: setTextColour($secondary-colour);
+        }
+    }
 }
 
 .job-1 {

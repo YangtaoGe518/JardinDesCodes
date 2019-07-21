@@ -41,6 +41,15 @@ $background-opacity: 0.9;  // adjust the depth
     }
 }
 
+// set border colour
+@function setEdgeColour($colour) {
+    @if (lightness($colour) > 54){
+        @return $primary-colour;
+    } @else {
+        @return $secondary-colour;
+    }
+}
+
 
 /* Media Query Mixins */
 @mixin mediaSmall {
