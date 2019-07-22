@@ -95,6 +95,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 .close-wechat {
   transform: rotate(180deg); }
   .close-wechat .btn-line:nth-child(1) {
